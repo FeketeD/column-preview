@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.container {
+    display: flex;
+    max-width: 900px;
+    color: hsl(0, 0%, 100%);
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    width: 100%;
+    padding: 40px;
+}
+
+h1 {
+   font-family: "Big Shoulders Display", cursive;
+   font-weight: 700;
+   font-size: 2.5rem;
+   margin: 15px 0;
+   text-transform: uppercase;
+}
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    margin: 15px 0;
+    line-height: 1.6;
+}
+img {
+    margin-bottom: 15px;
+}
+
+button{
+    all: unset;
+    background-color: hsl(0, 0%, 100%);
+    border: 2px hsl(0, 0%, 100%) solid;
+    cursor: pointer;
+    padding: 15px 30px;
+    margin-top: 60px;
+    border-radius: 40px;
+}
+button:hover{
+    background-color: transparent;
+    color: hsl(0, 0%, 100%);
+    border: 2px hsl(0, 0%, 100%) solid;
+}
+
+.sedan {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+.sedan-btn {
+    color: hsl(31, 77%, 52%);
+}
+
+.suv {
+    background-color: hsl(184, 100%, 22%);
+}
+.suv-btn{
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+.luxury-btn{
+    color: hsl(179, 100%, 13%);
+}
+
+@media (max-width: 975px) {
+    .container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 250px;
+        margin: 3rem 1.5rem;
+    }
+    .sedan{
+        border-radius: 10px 10px 0 0;
+    }
+    .luxury{
+        border-radius: 0 0 10px 10px;
+    }
+    button{
+        padding: 10px 30px;
+        margin-top: 20px;
+    }
+}
